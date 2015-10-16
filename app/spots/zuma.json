@@ -1,0 +1,11 @@
+{
+"id": "zuma",
+"name": "Zuma",
+"snippet": "Heavy Barrels",
+"images": [
+        "images/zuma.jpg",
+        "images/zuma1.jpg",
+        "images/zuma2.jpg"
+    ],
+"region": "SoCal"
+}

@@ -2,41 +2,38 @@
 
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
-describe('my app', function() {
+describe('SpotCheck App', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
-  });
+  // it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  //   browser.get('app/index.html');
+  //   expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  // });
 
-
-  describe('view1', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#/view1');
-    });
-
-
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
-    });
-
-  });
-
-
-  describe('view2', function() {
+  describe('Spot View', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('app/index.html');
+    });
+    var spotList = element.all(by.repeater('spot in spots'));
+    var query = element(by.model('query'));
+
+
+    it('should filter the spot list', function() {
+
+
+      expect(spotList.count()).toBe(3);
+
+      query.sendKeys('Pacifica');
+      expect(spotList.count()).toBe(1);
+
     });
 
-
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
+    it('should display the spot name at the top of the page', function(){
+      query.clear();
+      expect(browser.getTitle()).toMatch('Spot Check');
+      query.sendKeys('Pacifica');
+      expect(browser.getTitle()).toMatch('Spot Check: Pacifica')
     });
-
   });
 });

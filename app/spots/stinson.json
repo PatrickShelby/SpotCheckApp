@@ -1,0 +1,11 @@
+{
+"id": "stinson",
+"name": "Stinson",
+"snippet": "Good mostly for sunbathing",
+"images": [
+        "images/stinson_beach.jpg",
+        "images/stinson_beach1.jpg",
+        "images/stinson_beach2.jpg"
+    ],
+"region": "NorCal"
+}

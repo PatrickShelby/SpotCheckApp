@@ -1,0 +1,37 @@
+[
+  {
+  "id": "ocean-beach-sf",
+  "name": "Ocean Beach, SF",
+  "snippet": "Miles of frothy beach break",
+  "imageUrl": "images/ocean_beach_sf.jpg",
+  "region": "NorCal"
+  },
+  {
+  "id": "pacifica",
+  "name": "Pacifica / Linda Mar",
+  "snippet": "Good for beginners",
+  "imageUrl": "images/pacifica.jpg",
+  "region": "NorCal"
+  },
+  {
+  "id": "stinson",
+  "name": "Stinson",
+  "snippet": "Nice and Flat",
+  "imageUrl": "images/stinson_beach.jpg",
+  "region": "NorCal"
+  },
+  {
+  "id": "zuma",
+  "name": "Zuma",
+  "snippet": "Shallow Barrels",
+  "imageUrl": "images/zuma.jpg",
+  "region": "SoCal"
+  },
+  {
+  "id": "malibu",
+  "name": "Malibu",
+  "snippet": "Classic Pointbreak, Locals Only!",
+  "imageUrl": "images/malibu.jpg",
+  "region": "SoCal"
+  }
+]

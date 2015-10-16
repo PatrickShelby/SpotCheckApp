@@ -1,0 +1,12 @@
+{
+"id": "malibu",
+"name": "Malibu",
+"snippet": "3 point breaks",
+"images": [
+        "images/malibu.jpg",
+        "images/malibu1.jpg",
+        "images/malibu2.jpg"
+    ],
+"region": "SoCal"
+
+}

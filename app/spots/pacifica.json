@@ -1,0 +1,11 @@
+{
+"id": "pacifica",
+"name": "Pacifica",
+"snippet": "Beginner Friendly",
+"images": [
+        "images/pacifica.jpg",
+        "images/pacifica1.jpg",
+        "images/pacifica2.jpg"
+    ],
+"region": "NorCal"
+}

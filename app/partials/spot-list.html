@@ -1,0 +1,24 @@
+<div class="conainer-fluid">
+  <div class="row">
+    <div class="col-md-2">
+
+      Search Spots: <input ng-model="query">
+      Select Region:
+      <select ng-model="region">
+        <option value=""> All Spots </option>
+        <option value="SoCal"> Southern California</option>
+        <option value="NorCal"> Northern California</option>
+      </select>
+    </div>
+    <div class="col-md-10">
+      <ul class="spots">
+        <li ng-repeat="spot in spots | filter:query | filter:region" class="thumbnail spot-listing">
+          <a href="#/spots/{{spot.id}}" class="thumb"><img ng-src="{{spot.imageUrl}}"></a>
+          <a href="#/spots/{{spot.id}}">{{spot.name}}</a>
+          <p>{{spot.snippet}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

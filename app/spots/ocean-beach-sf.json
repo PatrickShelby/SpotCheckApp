@@ -1,0 +1,10 @@
+{
+"id": "ocean-beach-sf",
+"name": "Ocean Beach",
+"snippet": "Big Waves",
+"images": [
+        "images/ocean_beach_sf.jpg",
+        "images/ocean_beach_sf1.jpg"
+    ],
+"region": "NorCal"
+}
